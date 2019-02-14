@@ -14,6 +14,13 @@ pipeline {
             }
             steps {
                 withCredentials([usernamePassword(credentialsId: 'webserver_login', usernameVariable: 'USERNAME', passwordVariable: 'USERPASS')]) {
+                  echo '${USERNAME}'
+                  echo '${USERPASS}'
+                  echo "echo step - env: ${env.USERNAME} - password through ${env.USERPASS}"
+                    sh 'echo "sh step - echo: ${USERNAME} - ${USERPASS}"'
+                    usernameLocal = env.USERNAME
+                    passwordLocal = env.USERPASS
+                    echo "echo step (in block) - vars: ${usernameLocal} - ${passwordLocal}"
                     sshPublisher(
                         failOnError: true,
                         continueOnError: false,
