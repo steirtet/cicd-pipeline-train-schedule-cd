@@ -75,7 +75,7 @@ pipeline {
         stage('Push F5 BigIP Staging Config') {
             steps {
                 script {
-                    sh 'curl -H "Content-Type: application/json" -X POST http://192.168.2.184 -d @bigip.json'
+                    sh 'curl --user admin:Studerr0cks! -H "Content-Type: application/json" -X POST https://192.168.2.184/mgmt/shared/appsvcs/declare -d @bigip.json'
                 }
             }
         }
