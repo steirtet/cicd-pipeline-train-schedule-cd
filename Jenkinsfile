@@ -72,5 +72,12 @@ pipeline {
                 }
             }
         }
+        stage('Push F5 BigIP Staging Config') {
+            steps {
+                script {
+                    sh 'curl -H "Content-Type: application/json" -X POST http://192.168.2.184 -d @bigipconfig-blob.json'
+                }
+            }
+        }
     }
 }
