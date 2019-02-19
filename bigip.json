@@ -19,6 +19,7 @@
             "192.168.2.60"
           ],
           "pool": "web_pool",
+          "serverTLS": "webtls"
         },
         "web_pool": {
           "class": "Pool",
