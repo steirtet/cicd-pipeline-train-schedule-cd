@@ -17,7 +17,7 @@
             "serviceMain": {
                 "class": "Service_HTTP",
                 "virtualAddresses": [
-                    "10.1.0.11"
+                    "192.168.2.60"
                 ],
                 "pool": "web_pool"
                 },
@@ -30,7 +30,7 @@
                         {
                             "servicePort": 3000,
                             "serverAddresses": [
-                                "10.1.1.7"
+                                "192.168.2.243"
                             ]
                         }
                     ]
