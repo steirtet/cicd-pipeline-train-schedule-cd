@@ -75,7 +75,7 @@ pipeline {
         stage('Push F5 BigIP Staging Config') {
             steps {
                 script {
-                    sh 'curl --user deploy:jenkinsdeploy -k -H "Content-Type: application/json" -X POST https://192.168.2.1/mgmt/shared/appsvcs/declare -d @bigip.json'
+                    sh 'curl --user deploy:jenkinsdeploy -k -H "Content-Type: application/json" -X POST https://172.31.46.246/mgmt/shared/appsvcs/declare -d @bigip.json'
                 }
             }
         }
