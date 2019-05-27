@@ -30,7 +30,7 @@
           "members": [{
             "servicePort": 3000,
             "serverAddresses": [
-              "192.168.2.243"
+              "172.31.32.133"
             ]
           }]
         },
