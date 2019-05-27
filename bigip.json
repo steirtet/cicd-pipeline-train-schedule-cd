@@ -16,7 +16,7 @@
         "serviceMain": {
           "class": "Service_HTTPS",
           "virtualAddresses": [
-            "172.31.46.246"
+            "172.31.31.70"
           ],
           "pool": "web_pool",
           "serverTLS": "webtls"
